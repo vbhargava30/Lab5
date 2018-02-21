@@ -14,6 +14,12 @@ public class Bank {
      */
     private String bankName;
 
+    /**
+     * Uses static variable to get number of bank accounts opened.
+     *
+     */
+    private static int totalAccounts = 0;
+
 
     /**
      * Create a new bank.
@@ -21,6 +27,7 @@ public class Bank {
 
     public Bank() {
         bankName = "Illini Bank";
+        totalAccounts++;
     }
 
     /**
@@ -35,7 +42,7 @@ public class Bank {
      */
     public boolean withdrawMoney(final BankAccount bankAccount, final double amount) {
 
-        
+
 
 
     }
@@ -84,20 +91,21 @@ public class Bank {
 
     public void changeOwnerName(final BankAccount bankAccount, final String name) {
 
+
+
+
     }
+
+
+
+    //Getters.
+
     /**
-     * Uses static variable to get number of bank accounts opened.
-     *
-     * @return the total number of accounts
+     * Get the number of accounts.
+     * @return the number of accounts.
      */
-    public static int totalAccounts = 0;
-
-
-    /*
-     * Getter for the account number.
-     */
-    public static int getNumberOfAccount() {
-
+    private static int getNumberOfAccount() {
+        return totalAccounts;
     }
 
     /**

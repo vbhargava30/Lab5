@@ -67,9 +67,11 @@ public class BankAccount {
      * @param accountCategory the category of the bank account.
      */
     public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
+
+        this.ownerName = name;
+
+        accountType = accountCategory;
+
     }
 
     //Getters.
@@ -160,7 +162,7 @@ public class BankAccount {
      * Set the interest rate.
      * @param interestRate the interest rate to set.
      */
-    public void setInterestRate(double interestRate) {
+    public void setInterestRate(final double interestRate) {
         this.interestRate = interestRate;
     }
 
